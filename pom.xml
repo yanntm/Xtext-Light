@@ -45,15 +45,6 @@
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/releases/${platform-version-name}</url>
 		</repository>
-		<repository>
-			<id>orbit</id>
-			<layout>p2</layout>
-			<url>${orbit-site}</url>
-		</repository>
-		<repository>
-			<id>The central nexus</id>
-			<url>http://repo1.maven.org/maven2</url>
-		</repository>
 	</repositories>
 	<pluginRepositories>
 	</pluginRepositories>
