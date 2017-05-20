@@ -50,6 +50,10 @@
 			<layout>p2</layout>
 			<url>${orbit-site}</url>
 		</repository>
+		<repository>
+			<id>The central nexus</id>
+			<url>http://repo1.maven.org/maven2</url>
+		</repository>
 	</repositories>
 	<pluginRepositories>
 	</pluginRepositories>
