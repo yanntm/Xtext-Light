@@ -22,3 +22,7 @@ deploy:
   local_dir: xtextlight.updatesite/target/repository
   on:
     branch: master
+
+
+after_deploy:
+  - curl -s -X POST -H "Content-Type:application/json" -H "Accept:application/json"   -H "Travis-API-Version:3" -H "Authorization:token $APITOKEN" -d '{"request":{"message":"Triggered XText Light build.","branch":"master"}}' https://api.travis-ci.org/repo/yanntm%2FITS-commandline/requests
