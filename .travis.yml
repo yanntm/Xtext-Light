@@ -1,0 +1,24 @@
+install: true
+
+language: java
+
+before_script:
+ - "echo $JAVA_OPTS"
+ - "export JAVA_OPTS=-Xmx1024m"
+
+script : mvn -e -t 4 generate-sources install 
+
+jdk: oraclejdk8
+
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+
+  
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  local_dir: updatesite/target/repository
+  on:
+    branch: master
