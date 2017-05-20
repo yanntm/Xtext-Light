@@ -11,6 +11,14 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<!-- A changer lors du passage à Maven 2.1 -->
+		<eclipse-site>http://download.eclipse.org/releases/${platform-version-name}</eclipse-site>
+		<!-- EDIT THIS ORBIT SITE FOR NEXT RELEASE : this is neon -->
+		<orbit-site>http://download.eclipse.org/tools/orbit/downloads/drops/R20170307180635/repository/</orbit-site>
+		<platform-version-name>neon</platform-version-name>
+		<xtextVersion>2.11.0</xtextVersion>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 	<modules>
 		<module>xtextlight.feature</module>
@@ -24,11 +32,19 @@
 				<version>${tycho-version}</version>
 				<extensions>true</extensions>
 			</plugin>
-
-			
 		</plugins>
 	</build>
 	<repositories>
+		<repository>
+			<id>Xtext latest</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/modeling/tmf/xtext/updates/releases/${xtextVersion}/</url>
+		</repository>
+		<repository>
+			<id>Eclipse current release</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/releases/${platform-version-name}</url>
+		</repository>
 	</repositories>
 	<pluginRepositories>
 	</pluginRepositories>
