@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="fr.lip6.move.xtextlight.feature"
+      id="xtextlight.feature"
       label="XText without JDT optional deps"
       version="1.0.0.qualifier"
       provider-name="lip6">
 
-   <description url="http://ddd.lip6.fr">
+   <description url="https://github.com/eclipse/xtext-core/issues/345">
       Provides XText, but not JDT allowing to bypass greedy declarations
 in XText manifest.
 See : https://github.com/eclipse/xtext-core/issues/345
@@ -300,14 +300,17 @@ Everyone is permitted to copy and distribute copies of this Agreement, but in or
 This Agreement is governed by the laws of the State of New York and the intellectual property laws of the United States of America. No party to this Agreement will bring a legal action under this Agreement more than one year after the cause of action arose. Each party waives its rights to a jury trial in any resulting litigation.
    </license>
 
+   <includes
+         id="org.eclipse.xtext.runtime"
+         version="0.0.0"/>
+
    <requires>
       <import plugin="org.eclipse.emf.ecore.xmi" version="2.10.2" match="greaterOrEqual"/>
       <import plugin="org.eclipse.emf.ecore" version="2.10.2" match="greaterOrEqual"/>
       <import plugin="org.eclipse.emf.common" version="2.10.1" match="greaterOrEqual"/>
-      <import plugin="org.antlr.runtime" version="3.2.0" match="perfect"/>
       <import plugin="com.google.inject" version="3.0.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.equinox.common" version="3.5.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.xtext.util"/>
+      <import plugin="org.eclipse.equinox.common" version="3.5.0" match="greaterOrEqual"/>
    </requires>
 
    <plugin
