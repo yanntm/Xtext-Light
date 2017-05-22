@@ -304,15 +304,6 @@ This Agreement is governed by the laws of the State of New York and the intellec
          id="org.eclipse.xtext.runtime"
          version="0.0.0"/>
 
-   <requires>
-      <import plugin="org.eclipse.emf.ecore.xmi" version="2.10.2" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.emf.ecore" version="2.10.2" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.emf.common" version="2.10.1" match="greaterOrEqual"/>
-      <import plugin="com.google.inject" version="3.0.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.xtext.util"/>
-      <import plugin="org.eclipse.equinox.common" version="3.5.0" match="greaterOrEqual"/>
-   </requires>
-
    <plugin
          id="org.eclipse.xtext"
          download-size="0"
@@ -357,6 +348,41 @@ This Agreement is governed by the laws of the State of New York and the intellec
 
    <plugin
          id="org.antlr.runtime"
+         download-size="0"
+         install-size="0"
+         version="3.2.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecore.xmi"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecore"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.common"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.util"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.common"
          download-size="0"
          install-size="0"
          version="0.0.0"
