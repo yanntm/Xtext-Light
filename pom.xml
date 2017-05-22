@@ -35,12 +35,12 @@
 		</plugins>
 	</build>
 	<repositories>
-<!-- 		<repository>
+		<repository>
 			<id>Xtext latest</id>
 			<layout>p2</layout>
-			 <url>http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/</url>
+			 <!-- <url>http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/</url> -->
 			 <url>http://download.eclipse.org/modeling/tmf/xtext/updates/releases/${xtextVersion}/</url>
-		</repository> -->
+		</repository> 
 		<repository>
 			<id>Eclipse current release</id>
 			<layout>p2</layout>
