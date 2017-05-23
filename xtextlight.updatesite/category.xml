@@ -6,6 +6,9 @@
    <feature url="features/xtextlight.feature_1.0.0.qualifier.jar" id="xtextlight.feature" version="1.0.0.qualifier">
       <category name="XTextLight"/>
    </feature>
+   <feature url="features/org.eclipse.platform_4.6.1.v20160907-1200.jar" id="org.eclipse.platform" version="4.6.1.v20160907-1200">
+      <category name="XTextLight"/>
+   </feature>
    <category-def name="XTextLight" label="XText Light">
       <description>
          minimal dependencies for XText
