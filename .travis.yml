@@ -6,7 +6,7 @@ before_script:
  - "echo $JAVA_OPTS"
  - "export JAVA_OPTS=-Xmx1024m"
 
-script : mvn -e -t 4 generate-sources install 
+script : mvn -e generate-sources install 
 
 jdk: oraclejdk8
 
